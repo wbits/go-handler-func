@@ -46,13 +46,13 @@ func TestSendJSON(t *testing.T) {
         }
         t.Log("\tShould decode the response.", checkMark)
 
-        if u.Name == "Dick" {
+        if u.Name == "John" {
           t.Log("\tShould have a Name.", checkMark)
         } else {
           t.Error("\tShould have a Name.", ballotX, u.Name)
         }
 
-        if u.Email == "dickbrouwers@chello.nl" {
+        if u.Email == "john@example.com" {
             t.Log("\tShould have an Email.", checkMark)
         } else {
             t.Error("\tShould have an Email.", ballotX, u.Email)

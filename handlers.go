@@ -16,8 +16,8 @@ func SendJson(rw http.ResponseWriter, r *http.Request) {
 	u := struct {
 		Name, Email string
 	} {
-		Name: "Dick",
-		Email: "dickbrouwers@chello.nl",
+		Name: "John",
+		Email: "john@example.com",
 	}
 
 	rw.Header().Set("Content-Type", "application/json")
